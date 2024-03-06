@@ -2,30 +2,33 @@ takut@TABLET-OUHBL7VH MINGW64 ~
 $ cd c:
 
 takut@TABLET-OUHBL7VH MINGW64 /c
+$ mkdir git_challenge
+
+takut@TABLET-OUHBL7VH MINGW64 /c
 $ cd git_challenge
+
+takut@TABLET-OUHBL7VH MINGW64 /c/git_challenge
+$ git init
+Initialized empty Git repository in C:/git_challenge/.git/
 
 takut@TABLET-OUHBL7VH MINGW64 /c/git_challenge (main)
 $ git add hello_world.txt
 
 takut@TABLET-OUHBL7VH MINGW64 /c/git_challenge (main)
-$ git log --online
-fatal: unrecognized argument: --online
+$ git commit -m"hello_world.txtを追加"
+[main (root-commit) cd35ade] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
 
 takut@TABLET-OUHBL7VH MINGW64 /c/git_challenge (main)
-$ git log
-commit 2c881eb256f3403c1cdb6665cc6449a9010cf6f0 (HEAD -> main)
-Author: taku0113 <takutakuwann1378@yahoo.co.jp>
-Date:   Tue Mar 5 06:55:29 2024 +0900
-
-    日本語訳を追記
-
-commit e51fe89930169b2d32737c31dcbfaaaec61f4668
-Author: taku0113 <takutakuwann1378@yahoo.co.jp>
-Date:   Tue Mar 5 06:49:12 2024 +0900
-
-    hello_world.txtを追加
+$ git add hello_world.txt
 
 takut@TABLET-OUHBL7VH MINGW64 /c/git_challenge (main)
-$ git log --oneline
-2c881eb (HEAD -> main) 日本語訳を追記
-e51fe89 hello_world.txtを追加
+$ git commit -m"日本語訳を追加"
+[main 09f1907] 日本語訳を追加
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+takut@TABLET-OUHBL7VH MINGW64 /c/git_challenge (main)
+$ git log  --oneline
+09f1907 (HEAD -> main) 日本語訳を追加
+cd35ade hello_world.txtを追加
